@@ -1,4 +1,4 @@
-# Database file
+# Backend code
 import os
 import json
 

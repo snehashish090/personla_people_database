@@ -36,26 +36,23 @@ def add_api():
 
     for i in names:
         names2.append(i["first_name"])
-
-    if "first_name" in request.args and "last_name" in request.args and "age" in request.args and "gender" in request.args and "email" in request.args and "phone_no" in request.args and "relation" in request.args:
         
-        if request.args["first_name"] not in names2:
-            add_to_database(
-                request.args["first_name"],
-                request.args["last_name"],
-                request.args["age"],
-                request.args["gender"],
-                request.args["email"],
-                request.args["phone_no"],
-                request.args["relation"],
-            )
-            return redirect("/api")
-
-        else:
-            return "No the the person already is there in your database"
+    if request.args["first_name"] not in names2:
+        add_to_database(
+            request.args["first_name"],
+            request.args["last_name"],
+            request.args["age"],
+            request.args["gender"],
+            request.args["email"],
+            request.args["phone_no"],
+            request.args["relation"],
+        )
+        return redirect("/api")
 
     else:
-        return "Not enough arguments"
+        return "No the the person already is there in your database"
+
+
 
     
 
