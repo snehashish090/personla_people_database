@@ -34,4 +34,4 @@ def add_to_database():
         print(ex)
 
 
-add_to_database()
+

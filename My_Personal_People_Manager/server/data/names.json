@@ -16,5 +16,14 @@
         "email": "ishan.kashyap@sahyadrischool.org",
         "phone_no": "",
         "relation": ""
+    },
+    {
+        "first_name": "Snehashish",
+        "last_name": "Laskar",
+        "age": "14",
+        "gender": "Male",
+        "email": "snehashish.laskar@sahyadrischool.org",
+        "phone_no": "6309806922",
+        "relation": "Myself"
     }
 ]

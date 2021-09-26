@@ -52,10 +52,6 @@ def add_api():
     else:
         return "No the the person already is there in your database"
 
-
-
-    
-
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")
 
